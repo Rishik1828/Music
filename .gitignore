@@ -96,3 +96,15 @@ config/secrets.*
 htmlcov/
 .pytest_cache/
 .tox/
+
+# ============================================================
+# Music Player Media & Local DB Caches
+# ============================================================
+songs/
+data/songs.db
+mood_dataset_updated*.csv
+db_match_log.txt
+all_mp3_files.txt
+check_db.py
+list_all_mp3.py
+
