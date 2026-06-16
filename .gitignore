@@ -42,7 +42,9 @@ Dataset/
 # ============================================================
 # Database
 # ============================================================
-data/songs.db
+# songs.db is intentionally tracked — it's pre-built and only 140KB.
+# Generic db files (temp/test) are ignored.
+!data/songs.db
 *.db
 *.sqlite
 *.sqlite3
