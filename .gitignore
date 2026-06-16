@@ -42,12 +42,11 @@ Dataset/
 # ============================================================
 # Database
 # ============================================================
-# songs.db is intentionally tracked — it's pre-built and only 140KB.
-# Generic db files (temp/test) are ignored.
-!data/songs.db
+# Ignore all db files by default, but explicitly track songs.db
 *.db
 *.sqlite
 *.sqlite3
+!data/songs.db
 
 # ============================================================
 # Jupyter Notebooks
