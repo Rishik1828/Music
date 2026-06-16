@@ -1,0 +1,97 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# ============================================================
+# Machine Learning / Model Files
+# ============================================================
+# NOTE: .pth, .pt, .h5 model weights are tracked via Git LFS (see .gitattributes)
+# Do NOT ignore them here — LFS handles large file storage automatically.
+
+# Ignore only non-essential ML artifacts
+models/*.pkl
+models/*.joblib
+models/*.ckpt
+
+# ============================================================
+# Dataset
+# ============================================================
+# Raw image/audio dataset files (usually large)
+Dataset/
+
+# ============================================================
+# Database
+# ============================================================
+data/songs.db
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================
+# Jupyter Notebooks
+# ============================================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================================================
+# IDE / Editor
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================================
+# OS generated files
+# ============================================================
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ============================================================
+# Logs & Temporary files
+# ============================================================
+*.log
+*.tmp
+*.temp
+logs/
+tmp/
+
+# ============================================================
+# Environment & Secrets
+# ============================================================
+.env
+.env.*
+*.secret
+config/secrets.*
+
+# ============================================================
+# Coverage & Testing
+# ============================================================
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
