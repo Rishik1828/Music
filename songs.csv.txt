@@ -1,421 +1,241 @@
-song_id,title,artist,language,genre,era,emotion_tag
-1,Butta Bomma,Armaan Malik,Telugu,Pop,new,happy
-2,Samajavaragamana,Sid Sriram,Telugu,Melody,new,happy
-3,Ramuloo Ramulaa,Anurag Kulkarni,Telugu,Folk,new,happy
-4,Seeti Maar,Jaspreet Jasz,Telugu,Mass,new,happy
-5,Mind Block,Blaaze,Telugu,Mass,new,happy
-6,Oo Antava,Indravathi Chauhan,Telugu,Mass,new,happy
-7,Inkem Inkem Inkem Kaavaale,Sid Sriram,Telugu,Melody,new,happy
-8,Vachadayyo Saami,Kailash Kher,Telugu,Folk,new,happy
-9,Pilla Raa,Anurag Kulkarni,Telugu,Romantic,new,happy
-10,Dil Se,Anurag Kulkarni,Telugu,Melody,new,happy
-11,Nee Kannu Neeli Samudram,Javed Ali,Telugu,Melody,new,happy
-12,Chitti,Anurag Kulkarni,Telugu,Pop,new,happy
-13,Adiga Adiga,Sid Sriram,Telugu,Melody,new,happy
-14,Maate Vinadhuga,Sid Sriram,Telugu,Romantic,new,happy
-15,Neeli Neeli Aakasam,Sid Sriram,Telugu,Melody,new,happy
-16,Saranga Dariya,Mangli,Telugu,Folk,new,happy
-17,Jigelu Rani,Rela Kumar,Telugu,Folk,new,happy
-18,Top Lesi Poddi,Sagar,Telugu,Mass,new,happy
-19,Bangaru Kodipetta,SP Balasubrahmanyam,Telugu,Folk,old,happy
-20,Aaresukoboyi Paresukunnanu,SP Balasubrahmanyam,Telugu,Folk,old,happy
-21,Tum Hi Ho,Arijit Singh,Hindi,Romantic,new,sad
-22,Channa Mereya,Arijit Singh,Hindi,Romantic,new,sad
-23,Agar Tum Saath Ho,Alka Yagnik,Hindi,Melody,new,sad
-24,Hamdard,Arijit Singh,Hindi,Melody,new,sad
-25,Phir Le Aya Dil,Arijit Singh,Hindi,Ghazal,new,sad
-26,Jag Soona Soona Lage,Rahat Fateh Ali Khan,Hindi,Melody,new,sad
-27,Tadap Tadap,KK,Hindi,Melody,old,sad
-28,Tujhe Bhula Diya,Mohit Chauhan,Hindi,Rock,new,sad
-29,Bekhayali,Sachet Tandon,Hindi,Rock,new,sad
-30,Khairiyat,Arijit Singh,Hindi,Melody,new,sad
-31,Abhi Mujh Mein Kahin,Sonu Nigam,Hindi,Melody,new,sad
-32,Lo Maan Liya,Arijit Singh,Hindi,Romantic,new,sad
-33,Tera Ban Jaunga,Akhil Sachdeva,Hindi,Romantic,new,sad
-34,Ae Dil Hai Mushkil,Arijit Singh,Hindi,Romantic,new,sad
-35,Kal Ho Naa Ho,Sonu Nigam,Hindi,Melody,new,sad
-36,Luka Chuppi,Lata Mangeshkar,Hindi,Melody,new,sad
-37,Main Dhoondne Ko Zamaane Mein,Arijit Singh,Hindi,Melody,new,sad
-38,Tu Jaane Na,Atif Aslam,Hindi,Romantic,new,sad
-39,Tujh Mein Rab Dikhta Hai,Roop Kumar Rathod,Hindi,Romantic,new,sad
-40,Tera Hone Laga Hoon,Atif Aslam,Hindi,Pop,new,sad
-41,Believer,Imagine Dragons,English,Rock,new,angry
-42,In The End,Linkin Park,English,Rock,old,angry
-43,Numb,Linkin Park,English,Rock,old,angry
-44,Enemy,Imagine Dragons,English,Rock,new,angry
-45,Radioactive,Imagine Dragons,English,Rock,new,angry
-46,Whatever It Takes,Imagine Dragons,English,Rock,new,angry
-47,Warriors,Imagine Dragons,English,Rock,new,angry
-48,Heathens,Twenty One Pilots,English,Alternative,new,angry
-49,Centuries,Fall Out Boy,English,Rock,new,angry
-50,Demons,Imagine Dragons,English,Rock,new,angry
-51,Monster,Skillet,English,Rock,new,angry
-52,Animals,Maroon 5,English,Pop,new,angry
-53,Stronger,Kanye West,English,Hip-Hop,new,angry
-54,Lose Yourself,Eminem,English,Hip-Hop,old,angry
-55,Till I Collapse,Eminem,English,Hip-Hop,old,angry
-56,Remember The Name,Fort Minor,English,Hip-Hop,old,angry
-57,Without Me,Eminem,English,Hip-Hop,old,angry
-58,Rap God,Eminem,English,Hip-Hop,new,angry
-59,Thunder,Imagine Dragons,English,Rock,new,angry
-60,Castle of Glass,Linkin Park,English,Rock,new,angry
-61,Ninnila Ninnila,Sid Sriram,Telugu,Melody,new,sad
-62,Adiga Adiga,Sid Sriram,Telugu,Melody,new,sad
-63,Yenti Yenti,Chinmayi,Telugu,Romantic,new,sad
-64,Undiporaadhey,Sid Sriram,Telugu,Melody,new,sad
-65,Nee Kallalona,Anurag Kulkarni,Telugu,Melody,new,sad
-66,Priyathama Priyathama,Chinmayi,Telugu,Melody,new,sad
-67,Em Sandeham Ledu,KK,Telugu,Romantic,new,sad
-68,Kanulanu Thaake,Arijit Singh,Telugu,Melody,new,sad
-69,Nee Choopule,Karthik,Telugu,Melody,new,sad
-70,Inthandham,SP Charan,Telugu,Melody,new,sad
-71,Jagadananda Karaka,SP Balasubrahmanyam,Telugu,Classical,old,neutral
-72,Sankarabharanamlo,SP Balasubrahmanyam,Telugu,Classical,old,neutral
-73,Brahmam Okate,SP Balasubrahmanyam,Telugu,Devotional,old,neutral
-74,Madhura Nagarilo,SP Balasubrahmanyam,Telugu,Classical,old,neutral
-75,Telusa Manasa,Chitra,Telugu,Melody,old,neutral
-76,Kal Ho Naa Ho,Sonu Nigam,Hindi,Melody,new,neutral
-77,Yun Hi Chala Chal,Udit Narayan,Hindi,Travel,new,neutral
-78,Ilahi,Arijit Singh,Hindi,Travel,new,neutral
-79,Patakha Guddi,Nooran Sisters,Hindi,Folk,new,neutral
-80,Zinda,Siddharth Mahadevan,Hindi,Rock,new,neutral
-81,Perfect,Ed Sheeran,English,Pop,new,happy
-82,Shape of You,Ed Sheeran,English,Pop,new,happy
-83,Counting Stars,OneRepublic,English,Pop,new,happy
-84,Happy,Pharrell Williams,English,Pop,new,happy
-85,Can’t Stop The Feeling,Justin Timberlake,English,Pop,new,happy
-86,Uptown Funk,Mark Ronson,English,Funk,new,happy
-87,Shake It Off,Taylor Swift,English,Pop,new,happy
-88,Firework,Katy Perry,English,Pop,new,happy
-89,Roar,Katy Perry,English,Pop,new,happy
-90,On Top Of The World,Imagine Dragons,English,Rock,new,happy
-91,Someone Like You,Adele,English,Ballad,new,sad
-92,Hello,Adele,English,Pop,new,sad
-93,Let Her Go,Passenger,English,Folk,new,sad
-94,Say Something,A Great Big World,English,Ballad,new,sad
-95,Fix You,Coldplay,English,Rock,new,sad
-96,Photograph,Ed Sheeran,English,Pop,new,sad
-97,All I Want,Kodaline,English,Indie,new,sad
-98,When I Was Your Man,Bruno Mars,English,Pop,new,sad
-99,Arcade,Duncan Laurence,English,Pop,new,sad
-100,Someone You Loved,Lewis Capaldi,English,Pop,new,sad
-101,Fear Song,Anirudh Ravichander,Telugu,Mass,new,fear
-102,Daavudi,Nakash Aziz,Telugu,Mass,new,fear
-103,Gelupu Thalupule,Sri Rama Chandra,Telugu,Inspirational,new,fear
-104,Pranaamam,Shankar Mahadevan,Telugu,Devotional,new,fear
-105,Sahasam Swasaga Sagipo,Karthik,Telugu,Adventure,new,fear
-106,Agni Skalana,SP Balasubrahmanyam,Telugu,Patriotic,old,fear
-107,Vetagadu Theme,Instrumental,Telugu,Background,old,fear
-108,Baahubali Theme,MM Keeravani,Telugu,Orchestral,new,fear
-109,Siva Sivaya Potri,Daler Mehndi,Telugu,Devotional,new,fear
-110,Dheevara,Ramya Behara,Telugu,Epic,new,fear
-111,Rudraveena Theme,Instrumental,Telugu,Classical,old,fear
-112,Ranam Title Song,Mani Sharma,Telugu,Mass,old,fear
-113,Jagadeka Veerudu Theme,Ilaiyaraaja,Telugu,Fantasy,old,fear
-114,Aakasam Nee Haddura Theme,GV Prakash,Telugu,Inspirational,new,fear
-115,Bheemla Nayak Title Song,Thaman S,Telugu,Mass,new,fear
-116,Pushpa Theme,Devi Sri Prasad,Telugu,Mass,new,fear
-117,Sye Sye,MM Keeravani,Telugu,Patriotic,old,fear
-118,RRR Theme,MM Keeravani,Telugu,Orchestral,new,fear
-119,Komuram Bheemudo,Kaala Bhairava,Telugu,Folk,new,fear
-120,Saahasam Theme,Sri Charan Pakala,Telugu,Adventure,new,fear
-121,Kar Har Maidaan Fateh,Sukhwinder Singh,Hindi,Inspirational,new,fear
-122,Zinda,Siddharth Mahadevan,Hindi,Rock,new,fear
-123,Lakshya Title Track,Shankar Mahadevan,Hindi,Inspirational,old,fear
-124,Chak De India,Sukhwinder Singh,Hindi,Patriotic,new,fear
-125,Brothers Anthem,Vishal Dadlani,Hindi,Rock,new,fear
-126,Sultan Title Track,Sukhwinder Singh,Hindi,Rock,new,fear
-127,Jee Le Zara,Vishal Dadlani,Hindi,Pop,new,fear
-128,Aashayein,KK,Hindi,Inspirational,old,fear
-129,Roobaroo,AR Rahman,Hindi,Rock,old,fear
-130,Zinda Hoon Yaar,Amit Trivedi,Hindi,Rock,new,fear
-131,Kandhon Se Milte Hain Kandhe,Shankar Mahadevan,Hindi,Patriotic,old,fear
-132,Mitwa,Shafqat Amanat Ali,Hindi,Romantic,new,fear
-133,Rubaroo,Rang De Basanti Cast,Hindi,Inspirational,old,fear
-134,Yeh Hausla,Shafqat Amanat Ali,Hindi,Inspirational,new,fear
-135,Jeete Hain Chal,Sukhwinder Singh,Hindi,Motivational,new,fear
-136,Sandese Aate Hain,Sonu Nigam,Hindi,Patriotic,old,fear
-137,Desh Mere,Arijit Singh,Hindi,Patriotic,new,fear
-138,Lehra Do,Arijit Singh,Hindi,Inspirational,new,fear
-139,Aarambh Hai Prachand,Piyush Mishra,Hindi,Rock,old,fear
-140,Apna Time Aayega,Ranveer Singh,Hindi,Hip-Hop,new,fear
-141,Thriller,Michael Jackson,English,Pop,old,fear
-142,Everybody Wants To Rule The World,Tears for Fears,English,Rock,old,fear
-143,Radioactive,Imagine Dragons,English,Rock,new,fear
-144,Demons,Imagine Dragons,English,Rock,new,fear
-145,Bad Guy,Billie Eilish,English,Pop,new,fear
-146,Boulevard Of Broken Dreams,Green Day,English,Rock,new,fear
-147,Heathens,Twenty One Pilots,English,Alternative,new,fear
-148,Zombie,The Cranberries,English,Rock,old,fear
-149,Creep,Radiohead,English,Alternative,old,fear
-150,Everybody's Fool,Evanescence,English,Rock,old,fear
-151,My Immortal,Evanescence,English,Ballad,old,fear
-152,The Sound Of Silence,Disturbed,English,Rock,new,fear
-153,Numb,Linkin Park,English,Rock,old,fear
-154,In The End,Linkin Park,English,Rock,old,fear
-155,Mad World,Gary Jules,English,Alternative,old,fear
-156,Lovely,Billie Eilish,English,Pop,new,fear
-157,Bury A Friend,Billie Eilish,English,Pop,new,fear
-158,Everybody Dies In Their Nightmares,XXXTentacion,English,Hip-Hop,new,fear
-159,Bring Me To Life,Evanescence,English,Rock,old,fear
-160,Hurt,Johnny Cash,English,Country,old,fear
-161,Asha Pasham,Cactus,Telugu,Indie,new,surprise
-162,Inkem Inkem Inkem Kaavaale,Sid Sriram,Telugu,Melody,new,surprise
-163,Adento Gaani Vunnapaatuga,Anurag Kulkarni,Telugu,Melody,new,surprise
-164,Naatu Naatu,Rahul Sipligunj,Telugu,Folk,new,surprise
-165,Life Of Ram,Pradeep Kumar,Telugu,Melody,new,surprise
-166,Vellipomaakey,Sid Sriram,Telugu,Indie,new,surprise
-167,Padara Padara,Shankar Mahadevan,Telugu,Folk,new,surprise
-168,Samayama,Anurag Kulkarni,Telugu,Melody,new,surprise
-169,Ammaye Sannaga,Anurag Kulkarni,Telugu,Romantic,new,surprise
-170,Chal Chal Gurram,Rahul Sipligunj,Telugu,Folk,new,surprise
-171,Kesariya,Arijit Singh,Hindi,Romantic,new,surprise
-172,Ilahi,Arijit Singh,Hindi,Travel,new,surprise
-173,Safarnama,Lucky Ali,Hindi,Travel,new,surprise
-174,Phir Se Ud Chala,Mohit Chauhan,Hindi,Travel,new,surprise
-175,Subhanallah,Sreeram Chandra,Hindi,Romantic,new,surprise
-176,Hawayein,Arijit Singh,Hindi,Romantic,new,surprise
-177,Love You Zindagi,Jasleen Royal,Hindi,Pop,new,surprise
-178,Yun Hi Chala Chal,Udit Narayan,Hindi,Travel,new,surprise
-179,Zehnaseeb,Chinmayi,Hindi,Romantic,new,surprise
-180,Ao Milo Chalo,Shaan,Hindi,Travel,new,surprise
-181,Viva La Vida,Coldplay,English,Rock,new,surprise
-182,Adventure Of A Lifetime,Coldplay,English,Pop,new,surprise
-183,A Sky Full Of Stars,Coldplay,English,Pop,new,surprise
-184,Wake Me Up,Avicii,English,EDM,new,surprise
-185,Counting Stars,OneRepublic,English,Pop,new,surprise
-186,Paradise,Coldplay,English,Rock,new,surprise
-187,The Nights,Avicii,English,EDM,new,surprise
-188,Pompeii,Bastille,English,Alternative,new,surprise
-189,Hall Of Fame,The Script,English,Pop,new,surprise
-190,Titanium,David Guetta,English,EDM,new,surprise
-191,Cheliya Cheliya,Hariharan,Telugu,Melody,old,disgust
-192,Neeve,Nikhita Gandhi,Telugu,Indie,new,disgust
-193,Yemito,Haricharan,Telugu,Melody,new,disgust
-194,Emo Emo,Sid Sriram,Telugu,Melody,new,disgust
-195,Manasa Manasa,Sid Sriram,Telugu,Romantic,new,disgust
-196,Nuvvunte Naa Jathaga,Sid Sriram,Telugu,Melody,new,disgust
-197,Oh Priya Priya,Adnan Sami,Telugu,Romantic,old,disgust
-198,Vintunnava,Karthik,Telugu,Melody,old,disgust
-199,Emai Poyave,Sid Sriram,Telugu,Melody,new,disgust
-200,Nijame Ne Chebutunna,Sid Sriram,Telugu,Melody,new,disgust
-201,Doorie,Atif Aslam,Hindi,Rock,old,disgust
-202,Alvida,KK,Hindi,Rock,old,disgust
-203,Bulleya,Amit Mishra,Hindi,Rock,new,disgust
-204,Chhod Diya,Arijit Singh,Hindi,Melody,new,disgust
-205,Tadap Tadap,KK,Hindi,Melody,old,disgust
-206,Tujhe Bhula Diya,Mohit Chauhan,Hindi,Rock,new,disgust
-207,Breakup Song,Arijit Singh,Hindi,Pop,new,disgust
-208,Ae Dil Hai Mushkil,Arijit Singh,Hindi,Romantic,new,disgust
-209,Phir Bhi Tumko Chaahunga,Arijit Singh,Hindi,Romantic,new,disgust
-210,Hamari Adhuri Kahani,Arijit Singh,Hindi,Melody,new,disgust
-211,Channa Mereya,Arijit Singh,Hindi,Romantic,new,disgust
-212,Agar Tum Saath Ho,Alka Yagnik,Hindi,Melody,new,disgust
-213,Bekhayali,Sachet Tandon,Hindi,Rock,new,disgust
-214,Main Dhoondne Ko Zamaane Mein,Arijit Singh,Hindi,Melody,new,disgust
-215,Tera Ban Jaunga,Akhil Sachdeva,Hindi,Romantic,new,disgust
-216,Khairiyat,Arijit Singh,Hindi,Melody,new,disgust
-217,Tum Hi Ho,Arijit Singh,Hindi,Romantic,new,disgust
-218,Abhi Mujh Mein Kahin,Sonu Nigam,Hindi,Melody,new,disgust
-219,Lo Maan Liya,Arijit Singh,Hindi,Melody,new,disgust
-220,Jag Soona Soona Lage,Rahat Fateh Ali Khan,Hindi,Melody,new,disgust
-221,Someone You Loved,Lewis Capaldi,English,Pop,new,disgust
-222,Without You,The Kid LAROI,English,Pop,new,disgust
-223,Happier,Marshmello,English,EDM,new,disgust
-224,Drivers License,Olivia Rodrigo,English,Pop,new,disgust
-225,Traitor,Olivia Rodrigo,English,Pop,new,disgust
-226,Arcade,Duncan Laurence,English,Pop,new,disgust
-227,Before You Go,Lewis Capaldi,English,Pop,new,disgust
-228,Easy On Me,Adele,English,Pop,new,disgust
-229,Back To December,Taylor Swift,English,Country,new,disgust
-230,All Too Well,Taylor Swift,English,Pop,new,disgust
-231,Happier Than Ever,Billie Eilish,English,Pop,new,disgust
-232,Lovely,Billie Eilish,English,Pop,new,disgust
-233,When I Was Your Man,Bruno Mars,English,Pop,new,disgust
-234,Let Her Go,Passenger,English,Folk,new,disgust
-235,Fix You,Coldplay,English,Rock,new,disgust
-236,The Scientist,Coldplay,English,Rock,old,disgust
-237,Say Something,A Great Big World,English,Ballad,new,disgust
-238,All I Want,Kodaline,English,Indie,new,disgust
-239,Someone Like You,Adele,English,Pop,new,disgust
-240,Hello,Adele,English,Pop,new,disgust
-241,Sankarabharanamlo,SP Balasubrahmanyam,Telugu,Classical,old,neutral
-242,Jagadananda Karaka,SP Balasubrahmanyam,Telugu,Classical,old,neutral
-243,Brahmam Okate,SP Balasubrahmanyam,Telugu,Devotional,old,neutral
-244,Madhura Nagarilo,SP Balasubrahmanyam,Telugu,Classical,old,neutral
-245,Sri Raghuram,S P Sailaja,Telugu,Devotional,old,neutral
-246,Vatapi Ganapatim,MS Subbulakshmi,Telugu,Classical,old,neutral
-247,Nagumomu,Dr Balamuralikrishna,Telugu,Classical,old,neutral
-248,Endaro Mahanubhavulu,MS Subbulakshmi,Telugu,Classical,old,neutral
-249,Bantureethi Kolu,Dr Balamuralikrishna,Telugu,Classical,old,neutral
-250,Rama Katha Ganalayam,SP Balasubrahmanyam,Telugu,Devotional,old,neutral
-251,Luka Chuppi,Lata Mangeshkar,Hindi,Melody,new,neutral
-252,Kal Ho Naa Ho,Sonu Nigam,Hindi,Melody,new,neutral
-253,Yun Hi Chala Chal,Udit Narayan,Hindi,Travel,new,neutral
-254,Ilahi,Arijit Singh,Hindi,Travel,new,neutral
-255,Safarnama,Lucky Ali,Hindi,Travel,new,neutral
-256,Aao Milo Chalo,Shaan,Hindi,Travel,new,neutral
-257,Zinda,Siddharth Mahadevan,Hindi,Rock,new,neutral
-258,Patakha Guddi,Nooran Sisters,Hindi,Folk,new,neutral
-259,Rubaroo,AR Rahman,Hindi,Inspirational,old,neutral
-260,Dil Chahta Hai,Shankar Mahadevan,Hindi,Pop,old,neutral
-261,Imagine,John Lennon,English,Soft Rock,old,neutral
-262,Let It Be,The Beatles,English,Rock,old,neutral
-263,Fix You,Coldplay,English,Rock,new,neutral
-264,Paradise,Coldplay,English,Rock,new,neutral
-265,Yellow,Coldplay,English,Rock,old,neutral
-266,Viva La Vida,Coldplay,English,Rock,new,neutral
-267,Photograph,Ed Sheeran,English,Pop,new,neutral
-268,Perfect,Ed Sheeran,English,Pop,new,neutral
-269,A Thousand Years,Christina Perri,English,Pop,new,neutral
-270,Counting Stars,OneRepublic,English,Pop,new,neutral
-271,Ramuloo Ramulaa,Anurag Kulkarni,Telugu,Folk,new,happy
-272,Saranga Dariya,Mangli,Telugu,Folk,new,happy
-273,Jigelu Rani,Rela Kumar,Telugu,Folk,new,happy
-274,Naatu Naatu,Rahul Sipligunj,Telugu,Folk,new,happy
-275,Oo Antava,Indravathi Chauhan,Telugu,Mass,new,happy
-276,Vachadayyo Saami,Kailash Kher,Telugu,Folk,new,happy
-277,Seeti Maar,Jaspreet Jasz,Telugu,Mass,new,happy
-278,Mind Block,Blaaze,Telugu,Mass,new,happy
-279,Top Lesi Poddi,Sagar,Telugu,Mass,new,happy
-280,Pakka Local,Geetha Madhuri,Telugu,Mass,new,happy
-281,Badtameez Dil,Benny Dayal,Hindi,Pop,new,happy
-282,Subha Hone Na De,Mika Singh,Hindi,Pop,new,happy
-283,Gallan Goodiyaan,Yashita Sharma,Hindi,Pop,new,happy
-284,London Thumakda,Labh Janjua,Hindi,Folk,new,happy
-285,Nashe Si Chadh Gayi,Arijit Singh,Hindi,Pop,new,happy
-286,Kar Gayi Chull,Badshah,Hindi,Pop,new,happy
-287,The Disco Song,Benny Dayal,Hindi,Pop,new,happy
-288,Balam Pichkari,Vishal Dadlani,Hindi,Folk,new,happy
-289,Cutiepie,Pritam,Hindi,Pop,new,happy
-290,Kala Chashma,Amar Arshi,Hindi,Pop,new,happy
-291,Happy,Pharrell Williams,English,Pop,new,happy
-292,Shake It Off,Taylor Swift,English,Pop,new,happy
-293,Can't Stop The Feeling,Justin Timberlake,English,Pop,new,happy
-294,On Top Of The World,Imagine Dragons,English,Rock,new,happy
-295,Uptown Funk,Mark Ronson,English,Funk,new,happy
-296,Firework,Katy Perry,English,Pop,new,happy
-297,Roar,Katy Perry,English,Pop,new,happy
-298,Good Time,Owl City,English,Pop,new,happy
-299,Walking On Sunshine,Katrina and the Waves,English,Pop,old,happy
-300,Best Day Of My Life,American Authors,English,Rock,new,happy
-301,Nee Kannu Neeli Samudram,Javed Ali,Telugu,Melody,new,happy
-302,Maate Vinadhuga,Sid Sriram,Telugu,Romantic,new,happy
-303,Neeli Neeli Aakasam,Sid Sriram,Telugu,Melody,new,happy
-304,Adiga Adiga,Sid Sriram,Telugu,Melody,new,happy
-305,Pilla Raa,Anurag Kulkarni,Telugu,Romantic,new,happy
-306,Dil Se,Anurag Kulkarni,Telugu,Melody,new,happy
-307,Inkem Inkem Inkem Kaavaale,Sid Sriram,Telugu,Melody,new,happy
-308,Chitti,Anurag Kulkarni,Telugu,Pop,new,happy
-309,Samajavaragamana,Sid Sriram,Telugu,Melody,new,happy
-310,Butta Bomma,Armaan Malik,Telugu,Pop,new,happy
-311,Agar Tum Saath Ho,Alka Yagnik,Hindi,Melody,new,sad
-312,Tum Hi Ho,Arijit Singh,Hindi,Romantic,new,sad
-313,Channa Mereya,Arijit Singh,Hindi,Romantic,new,sad
-314,Khairiyat,Arijit Singh,Hindi,Melody,new,sad
-315,Bekhayali,Sachet Tandon,Hindi,Rock,new,sad
-316,Tujhe Bhula Diya,Mohit Chauhan,Hindi,Rock,new,sad
-317,Hamdard,Arijit Singh,Hindi,Melody,new,sad
-318,Phir Le Aya Dil,Arijit Singh,Hindi,Ghazal,new,sad
-319,Abhi Mujh Mein Kahin,Sonu Nigam,Hindi,Melody,new,sad
-320,Jag Soona Soona Lage,Rahat Fateh Ali Khan,Hindi,Melody,new,sad
-321,Believer,Imagine Dragons,English,Rock,new,angry
-322,Enemy,Imagine Dragons,English,Rock,new,angry
-323,Numb,Linkin Park,English,Rock,old,angry
-324,In The End,Linkin Park,English,Rock,old,angry
-325,Warriors,Imagine Dragons,English,Rock,new,angry
-326,Radioactive,Imagine Dragons,English,Rock,new,angry
-327,Monster,Skillet,English,Rock,new,angry
-328,Centuries,Fall Out Boy,English,Rock,new,angry
-329,Till I Collapse,Eminem,English,Hip-Hop,old,angry
-330,Rap God,Eminem,English,Hip-Hop,new,angry
-331,Komuram Bheemudo,Kaala Bhairava,Telugu,Folk,new,fear
-332,Pushpa Theme,Devi Sri Prasad,Telugu,Mass,new,fear
-333,Bheemla Nayak Title Song,Thaman S,Telugu,Mass,new,fear
-334,Baahubali Theme,MM Keeravani,Telugu,Orchestral,new,fear
-335,RRR Theme,MM Keeravani,Telugu,Orchestral,new,fear
-336,Dheevara,Ramya Behara,Telugu,Epic,new,fear
-337,Sye Sye,MM Keeravani,Telugu,Patriotic,old,fear
-338,Agni Skalana,SP Balasubrahmanyam,Telugu,Patriotic,old,fear
-339,Saahasam Theme,Sri Charan Pakala,Telugu,Adventure,new,fear
-340,Fear Song,Anirudh Ravichander,Telugu,Mass,new,fear
-341,Ilahi,Arijit Singh,Hindi,Travel,new,surprise
-342,Safarnama,Lucky Ali,Hindi,Travel,new,surprise
-343,Phir Se Ud Chala,Mohit Chauhan,Hindi,Travel,new,surprise
-344,Love You Zindagi,Jasleen Royal,Hindi,Pop,new,surprise
-345,Kesariya,Arijit Singh,Hindi,Romantic,new,surprise
-346,Hawayein,Arijit Singh,Hindi,Romantic,new,surprise
-347,Zehnaseeb,Chinmayi,Hindi,Romantic,new,surprise
-348,Subhanallah,Sreeram Chandra,Hindi,Romantic,new,surprise
-349,Ao Milo Chalo,Shaan,Hindi,Travel,new,surprise
-350,Yun Hi Chala Chal,Udit Narayan,Hindi,Travel,new,surprise
-351,Someone You Loved,Lewis Capaldi,English,Pop,new,disgust
-352,Happier,Marshmello,English,EDM,new,disgust
-353,Traitor,Olivia Rodrigo,English,Pop,new,disgust
-354,Drivers License,Olivia Rodrigo,English,Pop,new,disgust
-355,Arcade,Duncan Laurence,English,Pop,new,disgust
-356,Easy On Me,Adele,English,Pop,new,disgust
-357,Before You Go,Lewis Capaldi,English,Pop,new,disgust
-358,All Too Well,Taylor Swift,English,Pop,new,disgust
-359,The Scientist,Coldplay,English,Rock,old,disgust
-360,Let Her Go,Passenger,English,Folk,new,disgust
-361,Brahmam Okate,SP Balasubrahmanyam,Telugu,Devotional,old,neutral
-362,Nagumomu,Dr Balamuralikrishna,Telugu,Classical,old,neutral
-363,Endaro Mahanubhavulu,MS Subbulakshmi,Telugu,Classical,old,neutral
-364,Vatapi Ganapatim,MS Subbulakshmi,Telugu,Classical,old,neutral
-365,Sri Raghuram,S P Sailaja,Telugu,Devotional,old,neutral
-366,Telusa Manasa,Chitra,Telugu,Melody,old,neutral
-367,Sankarabharanamlo,SP Balasubrahmanyam,Telugu,Classical,old,neutral
-368,Jagadananda Karaka,SP Balasubrahmanyam,Telugu,Classical,old,neutral
-369,Bantureethi Kolu,Dr Balamuralikrishna,Telugu,Classical,old,neutral
-370,Rama Katha Ganalayam,SP Balasubrahmanyam,Telugu,Devotional,old,neutral
-371,Imagine,John Lennon,English,Soft Rock,old,neutral
-372,Let It Be,The Beatles,English,Rock,old,neutral
-373,Yellow,Coldplay,English,Rock,old,neutral
-374,Viva La Vida,Coldplay,English,Rock,new,neutral
-375,Photograph,Ed Sheeran,English,Pop,new,neutral
-376,Perfect,Ed Sheeran,English,Pop,new,neutral
-377,A Thousand Years,Christina Perri,English,Pop,new,neutral
-378,Paradise,Coldplay,English,Rock,new,neutral
-379,Counting Stars,OneRepublic,English,Pop,new,neutral
-380,Fix You,Coldplay,English,Rock,new,neutral
-381,Badtameez Dil,Benny Dayal,Hindi,Pop,new,happy
-382,Balam Pichkari,Vishal Dadlani,Hindi,Folk,new,happy
-383,London Thumakda,Labh Janjua,Hindi,Folk,new,happy
-384,Nashe Si Chadh Gayi,Arijit Singh,Hindi,Pop,new,happy
-385,Kar Gayi Chull,Badshah,Hindi,Pop,new,happy
-386,The Disco Song,Benny Dayal,Hindi,Pop,new,happy
-387,Cutiepie,Pritam,Hindi,Pop,new,happy
-388,Kala Chashma,Amar Arshi,Hindi,Pop,new,happy
-389,Gallan Goodiyaan,Yashita Sharma,Hindi,Pop,new,happy
-390,Subha Hone Na De,Mika Singh,Hindi,Pop,new,happy
-391,On Top Of The World,Imagine Dragons,English,Rock,new,happy
-392,Firework,Katy Perry,English,Pop,new,happy
-393,Roar,Katy Perry,English,Pop,new,happy
-394,Uptown Funk,Mark Ronson,English,Funk,new,happy
-395,Good Time,Owl City,English,Pop,new,happy
-396,Best Day Of My Life,American Authors,English,Rock,new,happy
-397,Walking On Sunshine,Katrina and the Waves,English,Pop,old,happy
-398,Happy,Pharrell Williams,English,Pop,new,happy
-399,Shake It Off,Taylor Swift,English,Pop,new,happy
-400,Can't Stop The Feeling,Justin Timberlake,English,Pop,new,happy
-401,Asha Pasham,Cactus,Telugu,Indie,new,surprise
-402,Life Of Ram,Pradeep Kumar,Telugu,Melody,new,surprise
-403,Vellipomaakey,Sid Sriram,Telugu,Indie,new,surprise
-404,Naatu Naatu,Rahul Sipligunj,Telugu,Folk,new,surprise
-405,Padara Padara,Shankar Mahadevan,Telugu,Folk,new,surprise
-406,Samayama,Anurag Kulkarni,Telugu,Melody,new,surprise
-407,Ammaye Sannaga,Anurag Kulkarni,Telugu,Romantic,new,surprise
-408,Adento Gaani Vunnapaatuga,Anurag Kulkarni,Telugu,Melody,new,surprise
-409,Inkem Inkem Inkem Kaavaale,Sid Sriram,Telugu,Melody,new,surprise
-410,Chal Chal Gurram,Rahul Sipligunj,Telugu,Folk,new,surprise
-411,Thriller,Michael Jackson,English,Pop,old,fear
-412,Bad Guy,Billie Eilish,English,Pop,new,fear
-413,Creep,Radiohead,English,Alternative,old,fear
-414,Zombie,The Cranberries,English,Rock,old,fear
-415,My Immortal,Evanescence,English,Ballad,old,fear
-416,The Sound Of Silence,Disturbed,English,Rock,new,fear
-417,Mad World,Gary Jules,English,Alternative,old,fear
-418,Lovely,Billie Eilish,English,Pop,new,fear
-419,Bury A Friend,Billie Eilish,English,Pop,new,fear
-420,Hurt,Johnny Cash,English,Country,old,fear
+song_title,artist,language,genre,era,emotion_tag,,mood
+Butta Bomma,Armaan Malik,Telugu,Pop,new,happy,,happy
+Samajavaragamana,Sid Sriram,Telugu,Melody,new,happy,,happy
+Ramuloo Ramulaa,Anurag Kulkarni,Telugu,Folk,new,happy,,happy
+Seeti Maar,Jaspreet Jasz,Telugu,Mass,new,happy,,happy
+Mind Block,Blaaze,Telugu,Mass,new,happy,,happy
+Oo Antava,Indravathi Chauhan,Telugu,Mass,new,happy,,happy
+Inkem Inkem Inkem Kaavaale,Sid Sriram,Telugu,Melody,new,happy,,happy
+Vachadayyo Saami,Kailash Kher,Telugu,Folk,new,happy,,happy
+Pilla Raa,Anurag Kulkarni,Telugu,Romantic,new,happy,,happy
+Dil Se,Anurag Kulkarni,Telugu,Melody,new,happy,,happy
+Ninnila Ninnila,Sid Sriram,Telugu,Melody,new,sad,,sad
+Adiga Adiga,Sid Sriram,Telugu,Melody,new,sad,,sad
+Yenti Yenti,Chinmayi,Telugu,Romantic,new,sad,,sad
+Undiporaadhey,Sid Sriram,Telugu,Melody,new,sad,,sad
+Nee Kallalona,Anurag Kulkarni,Telugu,Melody,new,sad,,sad
+Priyathama Priyathama,Chinmayi,Telugu,Melody,new,sad,,sad
+Em Sandeham Ledu,KK,Telugu,Romantic,new,sad,,sad
+Kanulanu Thaake,Arijit Singh,Telugu,Melody,new,sad,,sad
+Nee Choopule,Karthik,Telugu,Melody,new,sad,,sad
+Inthandham,SP Charan,Telugu,Melody,new,sad,,sad
+Butta Bomma,Armaan Malik,Telugu,Pop,new,happy,,angry
+Samajavaragamana,Sid Sriram,Telugu,Melody,new,happy,,angry
+Ramuloo Ramulaa,Anurag Kulkarni,Telugu,Folk,new,happy,,angry
+Seeti Maar,Jaspreet Jasz,Telugu,Mass,new,happy,,angry
+Mind Block,Blaaze,Telugu,Mass,new,happy,,angry
+Oo Antava,Indravathi Chauhan,Telugu,Mass,new,happy,,angry
+Inkem Inkem Inkem Kaavaale,Sid Sriram,Telugu,Melody,new,happy,,angry
+Vachadayyo Saami,Kailash Kher,Telugu,Folk,new,happy,,angry
+Pilla Raa,Anurag Kulkarni,Telugu,Romantic,new,happy,,angry
+Dil Se,Anurag Kulkarni,Telugu,Melody,new,happy,,angry
+Jagadananda Karaka,SP Balasubrahmanyam,Telugu,Classical,old,neutral,,calm
+Sankarabharanamlo,SP Balasubrahmanyam,Telugu,Classical,old,neutral,,calm
+Brahmam Okate,SP Balasubrahmanyam,Telugu,Devotional,old,neutral,,calm
+Madhura Nagarilo,SP Balasubrahmanyam,Telugu,Classical,old,neutral,,calm
+Telusa Manasa,Chitra,Telugu,Melody,old,neutral,,calm
+Sankarabharanamlo,SP Balasubrahmanyam,Telugu,Classical,old,neutral,,calm
+Jagadananda Karaka,SP Balasubrahmanyam,Telugu,Classical,old,neutral,,calm
+Brahmam Okate,SP Balasubrahmanyam,Telugu,Devotional,old,neutral,,calm
+Madhura Nagarilo,SP Balasubrahmanyam,Telugu,Classical,old,neutral,,calm
+Sri Raghuram,S P Sailaja,Telugu,Devotional,old,neutral,,calm
+Ninnila Ninnila,Sid Sriram,Telugu,Melody,new,sad,,romantic
+Adiga Adiga,Sid Sriram,Telugu,Melody,new,sad,,romantic
+Yenti Yenti,Chinmayi,Telugu,Romantic,new,sad,,romantic
+Undiporaadhey,Sid Sriram,Telugu,Melody,new,sad,,romantic
+Nee Kallalona,Anurag Kulkarni,Telugu,Melody,new,sad,,romantic
+Priyathama Priyathama,Chinmayi,Telugu,Melody,new,sad,,romantic
+Em Sandeham Ledu,KK,Telugu,Romantic,new,sad,,romantic
+Kanulanu Thaake,Arijit Singh,Telugu,Melody,new,sad,,romantic
+Nee Choopule,Karthik,Telugu,Melody,new,sad,,romantic
+Inthandham,SP Charan,Telugu,Melody,new,sad,,romantic
+Butta Bomma,Armaan Malik,Telugu,Pop,new,happy,,energetic
+Samajavaragamana,Sid Sriram,Telugu,Melody,new,happy,,energetic
+Ramuloo Ramulaa,Anurag Kulkarni,Telugu,Folk,new,happy,,energetic
+Seeti Maar,Jaspreet Jasz,Telugu,Mass,new,happy,,energetic
+Mind Block,Blaaze,Telugu,Mass,new,happy,,energetic
+Oo Antava,Indravathi Chauhan,Telugu,Mass,new,happy,,energetic
+Inkem Inkem Inkem Kaavaale,Sid Sriram,Telugu,Melody,new,happy,,energetic
+Vachadayyo Saami,Kailash Kher,Telugu,Folk,new,happy,,energetic
+Pilla Raa,Anurag Kulkarni,Telugu,Romantic,new,happy,,energetic
+Dil Se,Anurag Kulkarni,Telugu,Melody,new,happy,,energetic
+Fear Song,Anirudh Ravichander,Telugu,Mass,new,fear,,anxious
+Daavudi,Nakash Aziz,Telugu,Mass,new,fear,,anxious
+Gelupu Thalupule,Sri Rama Chandra,Telugu,Inspirational,new,fear,,anxious
+Pranaamam,Shankar Mahadevan,Telugu,Devotional,new,fear,,anxious
+Sahasam Swasaga Sagipo,Karthik,Telugu,Adventure,new,fear,,anxious
+Agni Skalana,SP Balasubrahmanyam,Telugu,Patriotic,old,fear,,anxious
+Vetagadu Theme,Instrumental,Telugu,Background,old,fear,,anxious
+Baahubali Theme,MM Keeravani,Telugu,Orchestral,new,fear,,anxious
+Siva Sivaya Potri,Daler Mehndi,Telugu,Devotional,new,fear,,anxious
+Dheevara,Ramya Behara,Telugu,Epic,new,fear,,anxious
+Asha Pasham,Cactus,Telugu,Indie,new,surprise,,surprised
+Inkem Inkem Inkem Kaavaale,Sid Sriram,Telugu,Melody,new,surprise,,surprised
+Adento Gaani Vunnapaatuga,Anurag Kulkarni,Telugu,Melody,new,surprise,,surprised
+Naatu Naatu,Rahul Sipligunj,Telugu,Folk,new,surprise,,surprised
+Life Of Ram,Pradeep Kumar,Telugu,Melody,new,surprise,,surprised
+Vellipomaakey,Sid Sriram,Telugu,Indie,new,surprise,,surprised
+Padara Padara,Shankar Mahadevan,Telugu,Folk,new,surprise,,surprised
+Samayama,Anurag Kulkarni,Telugu,Melody,new,surprise,,surprised
+Ammaye Sannaga,Anurag Kulkarni,Telugu,Romantic,new,surprise,,surprised
+Chal Chal Gurram,Rahul Sipligunj,Telugu,Folk,new,surprise,,surprised
+Badtameez Dil,Benny Dayal,Hindi,Pop,new,happy,,happy
+Subha Hone Na De,Mika Singh,Hindi,Pop,new,happy,,happy
+Gallan Goodiyaan,Yashita Sharma,Hindi,Pop,new,happy,,happy
+London Thumakda,Labh Janjua,Hindi,Folk,new,happy,,happy
+Nashe Si Chadh Gayi,Arijit Singh,Hindi,Pop,new,happy,,happy
+Kar Gayi Chull,Badshah,Hindi,Pop,new,happy,,happy
+The Disco Song,Benny Dayal,Hindi,Pop,new,happy,,happy
+Balam Pichkari,Vishal Dadlani,Hindi,Folk,new,happy,,happy
+Cutiepie,Pritam,Hindi,Pop,new,happy,,happy
+Kala Chashma,Amar Arshi,Hindi,Pop,new,happy,,happy
+Tum Hi Ho,Arijit Singh,Hindi,Romantic,new,sad,,sad
+Channa Mereya,Arijit Singh,Hindi,Romantic,new,sad,,sad
+Agar Tum Saath Ho,Alka Yagnik,Hindi,Melody,new,sad,,sad
+Hamdard,Arijit Singh,Hindi,Melody,new,sad,,sad
+Phir Le Aya Dil,Arijit Singh,Hindi,Ghazal,new,sad,,sad
+Jag Soona Soona Lage,Rahat Fateh Ali Khan,Hindi,Melody,new,sad,,sad
+Tadap Tadap,KK,Hindi,Melody,old,sad,,sad
+Tujhe Bhula Diya,Mohit Chauhan,Hindi,Rock,new,sad,,sad
+Bekhayali,Sachet Tandon,Hindi,Rock,new,sad,,sad
+Khairiyat,Arijit Singh,Hindi,Melody,new,sad,,sad
+Tum Hi Ho,Arijit Singh,Hindi,Romantic,new,sad,,angry
+Channa Mereya,Arijit Singh,Hindi,Romantic,new,sad,,angry
+Agar Tum Saath Ho,Alka Yagnik,Hindi,Melody,new,sad,,angry
+Hamdard,Arijit Singh,Hindi,Melody,new,sad,,angry
+Phir Le Aya Dil,Arijit Singh,Hindi,Ghazal,new,sad,,angry
+Jag Soona Soona Lage,Rahat Fateh Ali Khan,Hindi,Melody,new,sad,,angry
+Tadap Tadap,KK,Hindi,Melody,old,sad,,angry
+Tujhe Bhula Diya,Mohit Chauhan,Hindi,Rock,new,sad,,angry
+Bekhayali,Sachet Tandon,Hindi,Rock,new,sad,,angry
+Khairiyat,Arijit Singh,Hindi,Melody,new,sad,,angry
+Kal Ho Naa Ho,Sonu Nigam,Hindi,Melody,new,neutral,,calm
+Yun Hi Chala Chal,Udit Narayan,Hindi,Travel,new,neutral,,calm
+Ilahi,Arijit Singh,Hindi,Travel,new,neutral,,calm
+Patakha Guddi,Nooran Sisters,Hindi,Folk,new,neutral,,calm
+Zinda,Siddharth Mahadevan,Hindi,Rock,new,neutral,,calm
+Luka Chuppi,Lata Mangeshkar,Hindi,Melody,new,neutral,,calm
+Kal Ho Naa Ho,Sonu Nigam,Hindi,Melody,new,neutral,,calm
+Yun Hi Chala Chal,Udit Narayan,Hindi,Travel,new,neutral,,calm
+Ilahi,Arijit Singh,Hindi,Travel,new,neutral,,calm
+Safarnama,Lucky Ali,Hindi,Travel,new,neutral,,calm
+Tum Hi Ho,Arijit Singh,Hindi,Romantic,new,sad,,romantic
+Channa Mereya,Arijit Singh,Hindi,Romantic,new,sad,,romantic
+Agar Tum Saath Ho,Alka Yagnik,Hindi,Melody,new,sad,,romantic
+Hamdard,Arijit Singh,Hindi,Melody,new,sad,,romantic
+Phir Le Aya Dil,Arijit Singh,Hindi,Ghazal,new,sad,,romantic
+Jag Soona Soona Lage,Rahat Fateh Ali Khan,Hindi,Melody,new,sad,,romantic
+Tadap Tadap,KK,Hindi,Melody,old,sad,,romantic
+Tujhe Bhula Diya,Mohit Chauhan,Hindi,Rock,new,sad,,romantic
+Bekhayali,Sachet Tandon,Hindi,Rock,new,sad,,romantic
+Khairiyat,Arijit Singh,Hindi,Melody,new,sad,,romantic
+Badtameez Dil,Benny Dayal,Hindi,Pop,new,happy,,energetic
+Subha Hone Na De,Mika Singh,Hindi,Pop,new,happy,,energetic
+Gallan Goodiyaan,Yashita Sharma,Hindi,Pop,new,happy,,energetic
+London Thumakda,Labh Janjua,Hindi,Folk,new,happy,,energetic
+Nashe Si Chadh Gayi,Arijit Singh,Hindi,Pop,new,happy,,energetic
+Kar Gayi Chull,Badshah,Hindi,Pop,new,happy,,energetic
+The Disco Song,Benny Dayal,Hindi,Pop,new,happy,,energetic
+Balam Pichkari,Vishal Dadlani,Hindi,Folk,new,happy,,energetic
+Cutiepie,Pritam,Hindi,Pop,new,happy,,energetic
+Kala Chashma,Amar Arshi,Hindi,Pop,new,happy,,energetic
+Kar Har Maidaan Fateh,Sukhwinder Singh,Hindi,Inspirational,new,fear,,anxious
+Zinda,Siddharth Mahadevan,Hindi,Rock,new,fear,,anxious
+Lakshya Title Track,Shankar Mahadevan,Hindi,Inspirational,old,fear,,anxious
+Chak De India,Sukhwinder Singh,Hindi,Patriotic,new,fear,,anxious
+Brothers Anthem,Vishal Dadlani,Hindi,Rock,new,fear,,anxious
+Sultan Title Track,Sukhwinder Singh,Hindi,Rock,new,fear,,anxious
+Jee Le Zara,Return,Hindi,Pop,new,fear,,anxious
+Aashayein,KK,Hindi,Inspirational,old,fear,,anxious
+Roobaroo,AR Rahman,Hindi,Rock,old,fear,,anxious
+Zinda Hoon Yaar,Amit Trivedi,Hindi,Rock,new,fear,,anxious
+Kesariya,Arijit Singh,Hindi,Romantic,new,surprise,,surprised
+Ilahi,Arijit Singh,Hindi,Travel,new,surprise,,surprised
+Safarnama,Lucky Ali,Hindi,Travel,new,surprise,,surprised
+Phir Se Ud Chala,Mohit Chauhan,Hindi,Travel,new,surprise,,surprised
+Subhanallah,Sreeram Chandra,Hindi,Romantic,new,surprise,,surprised
+Hawayein,Arijit Singh,Hindi,Romantic,new,surprise,,surprised
+Love You Zindagi,Jasleen Royal,Hindi,Pop,new,surprise,,surprised
+Yun Hi Chala Chal,Udit Narayan,Hindi,Travel,new,surprise,,surprised
+Zehnaseeb,Chinmayi,Hindi,Romantic,new,surprise,,surprised
+Ao Milo Chalo,Shaan,Hindi,Travel,new,surprise,,surprised
+Perfect,Ed Sheeran,English,Pop,new,happy,,happy
+Shape of You,Ed Sheeran,English,Pop,new,happy,,happy
+Counting Stars,OneRepublic,English,Pop,new,happy,,happy
+Happy,Pharrell Williams,English,Pop,new,happy,,happy
+Can’t Stop The Feeling,Justin Timberlake,English,Pop,new,happy,,happy
+Uptown Funk,Mark Ronson,English,Funk,new,happy,,happy
+Shake It Off,Taylor Swift,English,Pop,new,happy,,happy
+Firework,Katy Perry,English,Pop,new,happy,,happy
+Roar,Katy Perry,English,Pop,new,happy,,happy
+On Top Of The World,Imagine Dragons,English,Rock,new,happy,,happy
+Someone Like You,Adele,English,Ballad,new,sad,,sad
+Hello,Adele,English,Pop,new,sad,,sad
+Let Her Go,Passenger,English,Folk,new,sad,,sad
+Say Something,A Great Big World,English,Ballad,new,sad,,sad
+Fix You,Coldplay,English,Rock,new,sad,,sad
+Photograph,Ed Sheeran,English,Pop,new,sad,,sad
+All I Want,Kodaline,English,Indie,new,sad,,sad
+When I Was Your Man,Bruno Mars,English,Pop,new,sad,,sad
+Arcade,Duncan Laurence,English,Pop,new,sad,,sad
+Someone You Loved,Lewis Capaldi,English,Pop,new,sad,,sad
+Believer,Imagine Dragons,English,Rock,new,angry,,angry
+In The End,Linkin Park,English,Rock,old,angry,,angry
+Numb,Linkin Park,English,Rock,old,angry,,angry
+Enemy,Imagine Dragons,English,Rock,new,angry,,angry
+Radioactive,Imagine Dragons,English,Rock,new,angry,,angry
+Whatever It Takes,Imagine Dragons,English,Rock,new,angry,,angry
+Warriors,Imagine Dragons,English,Rock,new,angry,,angry
+Heathens,Twenty One Pilots,English,Alternative,new,angry,,angry
+Centuries,Fall Out Boy,English,Rock,new,angry,,angry
+Demons,Imagine Dragons,English,Rock,new,angry,,angry
+Imagine,John Lennon,English,Soft Rock,old,neutral,,calm
+Let It Be,The Beatles,English,Rock,old,neutral,,calm
+Fix You,Coldplay,English,Rock,new,neutral,,calm
+Paradise,Coldplay,English,Rock,new,neutral,,calm
+Yellow,Coldplay,English,Rock,old,neutral,,calm
+Viva La Vida,Coldplay,English,Rock,new,neutral,,calm
+Photograph,Ed Sheeran,English,Pop,new,neutral,,calm
+Perfect,Ed Sheeran,English,Pop,new,neutral,,calm
+A Thousand Years,Christina Perri,English,Pop,new,neutral,,calm
+Counting Stars,OneRepublic,English,Pop,new,neutral,,calm
+Someone Like You,Adele,English,Ballad,new,sad,,romantic
+Hello,Adele,English,Pop,new,sad,,romantic
+Let Her Go,Passenger,English,Folk,new,sad,,romantic
+Say Something,A Great Big World,English,Ballad,new,sad,,romantic
+Fix You,Coldplay,English,Rock,new,sad,,romantic
+Photograph,Ed Sheeran,English,Pop,new,sad,,romantic
+All I Want,Kodaline,English,Indie,new,sad,,romantic
+When I Was Your Man,Bruno Mars,English,Pop,new,sad,,romantic
+Arcade,Duncan Laurence,English,Pop,new,sad,,romantic
+Someone You Loved,Lewis Capaldi,English,Pop,new,sad,,romantic
+Perfect,Ed Sheeran,English,Pop,new,happy,,energetic
+Shape of You,Ed Sheeran,English,Pop,new,happy,,energetic
+Counting Stars,OneRepublic,English,Pop,new,happy,,energetic
+Happy,Pharrell Williams,English,Pop,new,happy,,energetic
+Can’t Stop The Feeling,Justin Timberlake,English,Pop,new,happy,,energetic
+Uptown Funk,Mark Ronson,English,Funk,new,happy,,energetic
+Shake It Off,Taylor Swift,English,Pop,new,happy,,energetic
+Firework,Katy Perry,English,Pop,new,happy,,energetic
+Roar,Katy Perry,English,Pop,new,happy,,energetic
+On Top Of The World,Imagine Dragons,English,Rock,new,happy,,energetic
+Thriller,Michael Jackson,English,Pop,old,fear,,anxious
+Everybody Wants To Rule The World,Tears for Fears,English,Rock,old,fear,,anxious
+Radioactive,Imagine Dragons,English,Rock,new,fear,,anxious
+Demons,Imagine Dragons,English,Rock,new,fear,,anxious
+Bad Guy,Billie Eilish,English,Pop,new,fear,,anxious
+Boulevard Of Broken Dreams,Green Day,English,Rock,new,fear,,anxious
+Heathens,Twenty One Pilots,English,Alternative,new,fear,,anxious
+Zombie,The Cranberries,English,Rock,old,fear,,anxious
+Creep,Radiohead,English,Alternative,old,fear,,anxious
+Everybody's Fool,Evanescence,English,Rock,old,fear,,anxious
+Viva La Vida,Coldplay,English,Rock,new,surprise,,surprised
+Adventure Of A Lifetime,Coldplay,English,Pop,new,surprise,,surprised
+A Sky Full Of Stars,Coldplay,English,Pop,new,surprise,,surprised
+Wake Me Up,Avicii,English,EDM,new,surprise,,surprised
+Counting Stars,OneRepublic,English,Pop,new,surprise,,surprised
+Paradise,Coldplay,English,Rock,new,surprise,,surprised
+The Nights,Avicii,English,EDM,new,surprise,,surprised
+Pompeii,Bastille,English,Alternative,new,surprise,,surprised
+Hall Of Fame,The Script,English,Pop,new,surprise,,surprised
+Titanium,David Guetta,English,EDM,new,surprise,,surprised

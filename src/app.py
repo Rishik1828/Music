@@ -627,11 +627,56 @@ class EmotionMusicApp:
 
         # ── Now playing strip ─────────────────────────────────────────────────
         self._now_playing_var = tk.StringVar(value="Click a song to play  ♪")
-        np_bar = tk.Frame(self.root, bg="#0e0e22", pady=10)
+        self._is_paused = False
+        
+        np_bar = tk.Frame(self.root, bg="#0e0e22", pady=12)
         np_bar.pack(fill="x")
+        
         tk.Label(np_bar, textvariable=self._now_playing_var,
                  font=("Segoe UI", 12, "italic"), bg="#0e0e22",
-                 fg=ACCENT4).pack(padx=30, anchor="w")
+                 fg=ACCENT4).pack(side="left", padx=30, anchor="w")
+                 
+        # Playback Control Buttons
+        controls_frame = tk.Frame(np_bar, bg="#0e0e22")
+        controls_frame.pack(side="right", padx=30)
+        
+        # Pause / Resume Button
+        self._pause_btn = tk.Button(
+            controls_frame,
+            text="⏸  Pause",
+            font=("Segoe UI", 10, "bold"),
+            bg=BG_CARD2,
+            fg=TEXT_MAIN,
+            activebackground=ACCENT,
+            activeforeground=TEXT_MAIN,
+            relief="flat",
+            padx=16,
+            pady=6,
+            cursor="hand2",
+            bd=0,
+            command=self._toggle_pause,
+        )
+        self._pause_btn.pack(side="left", padx=6)
+        self._add_hover(self._pause_btn, BG_CARD2, ACCENT)
+        
+        # Stop Button
+        self._stop_btn = tk.Button(
+            controls_frame,
+            text="⏹  Stop",
+            font=("Segoe UI", 10, "bold"),
+            bg=BG_CARD2,
+            fg=TEXT_MAIN,
+            activebackground=BTN_STOP,
+            activeforeground=TEXT_MAIN,
+            relief="flat",
+            padx=16,
+            pady=6,
+            cursor="hand2",
+            bd=0,
+            command=self._stop_song,
+        )
+        self._stop_btn.pack(side="left", padx=6)
+        self._add_hover(self._stop_btn, BG_CARD2, BTN_STOP)
 
         # ── Scrollable song grid ──────────────────────────────────────────────
         container = tk.Frame(self.root, bg=BG_DARK)
@@ -712,9 +757,9 @@ class EmotionMusicApp:
 
                 # 1. Exact match
                 rows = conn.execute("""
-                    SELECT song_id, title, artist, language, era, emotion_tag, file_path
+                    SELECT song_id, title, artist, language, era, emotion_tag, mood, file_path
                     FROM songs
-                    WHERE emotion_tag = ? AND language = ? AND era = ?
+                    WHERE emotion_tag = ? AND language = ? AND era = ? AND file_path != ''
                     ORDER BY RANDOM() LIMIT ?
                 """, (emotion, lang, era, limit)).fetchall()
                 songs = [dict(r) for r in rows]
@@ -722,9 +767,9 @@ class EmotionMusicApp:
                 # 2. Relax era
                 if len(songs) < 6:
                     rows2 = conn.execute("""
-                        SELECT song_id, title, artist, language, era, emotion_tag, file_path
+                        SELECT song_id, title, artist, language, era, emotion_tag, mood, file_path
                         FROM songs
-                        WHERE emotion_tag = ? AND language = ?
+                        WHERE emotion_tag = ? AND language = ? AND file_path != ''
                         ORDER BY RANDOM() LIMIT ?
                     """, (emotion, lang, limit)).fetchall()
                     seen = {s["song_id"] for s in songs}
@@ -737,9 +782,9 @@ class EmotionMusicApp:
                 # 3. Relax all filters
                 if len(songs) < 6:
                     rows3 = conn.execute("""
-                        SELECT song_id, title, artist, language, era, emotion_tag, file_path
+                        SELECT song_id, title, artist, language, era, emotion_tag, mood, file_path
                         FROM songs
-                        WHERE emotion_tag = ?
+                        WHERE emotion_tag = ? AND file_path != ''
                         ORDER BY RANDOM() LIMIT ?
                     """, (emotion,), ).fetchall()
                     seen = {s["song_id"] for s in songs}
@@ -752,6 +797,11 @@ class EmotionMusicApp:
         except Exception as e:
             print(f"[App] DB error: {e}")
 
+        print(f"\n[App Debug] _fetch_songs for emotion='{emotion}', lang='{lang}', era='{era}' returned {len(songs)} songs:")
+        for s in songs:
+            print(f"  - '{s['title']}' by '{s['artist']}' | file_path='{s['file_path']}'")
+        print()
+
         return songs[:limit]
 
     def _make_song_card(self, parent, song: dict, row: int, col: int, accent_color: str):
@@ -761,6 +811,7 @@ class EmotionMusicApp:
         lang    = song.get("language", "")
         era     = song.get("era", "")
         emotion = song.get("emotion_tag", "")
+        mood    = song.get("mood", "")
         e_emoji = EMOTION_EMOJI.get(emotion, "🎵")
 
         card = tk.Frame(
@@ -807,7 +858,7 @@ class EmotionMusicApp:
         tags_frame = tk.Frame(card, bg=BG_CARD2)
         tags_frame.pack(anchor="w", pady=(10, 4))
 
-        for tag_text, tag_color in [(lang, "#4a3580"), (era, "#1a4a3a")]:
+        for tag_text, tag_color in [(lang, "#4a3580"), (era, "#1a4a3a"), (mood, "#d85a38")]:
             if tag_text:
                 tk.Label(
                     tags_frame,
@@ -856,13 +907,49 @@ class EmotionMusicApp:
 
         self._now_playing_var.set(f"♪  Now Playing:  {title}  —  {artist}")
 
+        # Reset pause state
+        self._is_paused = False
+        if hasattr(self, "_pause_btn") and self._pause_btn.winfo_exists():
+            self._pause_btn.config(text="⏸  Pause", bg=BG_CARD2)
+
         # Play in background
         threading.Thread(
-            target=lambda: self.engine.play_for_emotion(
-                self._detected_emotion or "neutral"
-            ),
+            target=lambda: self.engine.play_song(song),
             daemon=True,
         ).start()
+
+    def _toggle_pause(self):
+        """Toggle between pause and resume states."""
+        current = self.engine.get_current_song()
+        if not current:
+            return
+
+        title = current.get("title", "Unknown")
+        artist = current.get("artist", "Unknown")
+
+        if self._is_paused:
+            self.engine.resume()
+            self._is_paused = False
+            self._pause_btn.config(text="⏸  Pause", bg=BG_CARD2)
+            self._now_playing_var.set(f"♪  Now Playing:  {title}  —  {artist}")
+        else:
+            self.engine.pause()
+            self._is_paused = True
+            self._pause_btn.config(text="▶  Resume", bg=ACCENT)
+            self._now_playing_var.set(f"⏸  Paused:  {title}  —  {artist}")
+
+    def _stop_song(self):
+        """Stop the currently playing song."""
+        self.engine.stop()
+        self._is_paused = False
+        if hasattr(self, "_pause_btn") and self._pause_btn.winfo_exists():
+            self._pause_btn.config(text="⏸  Pause", bg=BG_CARD2)
+        self._now_playing_var.set("Playback stopped  ♪")
+
+        # Reset highlighted song card
+        if self._current_playing_frame and self._current_playing_frame.winfo_exists():
+            self._current_playing_frame.config(bg=BG_CARD2)
+            self._current_playing_frame = None
 
     # ── Utility ────────────────────────────────────────────────────────────────
     def _add_hover(self, btn, normal_color, hover_color):
@@ -881,6 +968,13 @@ def main():
     project_root = Path(__file__).resolve().parent.parent
     db_path      = project_root / "data" / "songs.db"
     model_path   = project_root / "models" / "emotion_model.pth"
+
+    # Automatically set up/update the database to sync with songs.csv.txt and files in songs/
+    try:
+        from setup_db import setup_database
+        setup_database()
+    except Exception as e:
+        print(f"[App] ⚠ Warning: Could not auto-update database: {e}")
 
     for path, label, hint in [
         (db_path,    "Song database", "python src/setup_db.py"),

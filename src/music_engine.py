@@ -157,16 +157,12 @@ class MusicEngine:
                self._query_song("neutral", self.language, "new")
 
     # ── Playback ───────────────────────────────────────────────────────────────
-    def play_for_emotion(self, emotion: str) -> Optional[dict]:
+    def play_song(self, song: dict) -> Optional[dict]:
         """
-        Selects and plays the best matching song for the given emotion.
+        Plays the specified song dictionary.
         If a song is already playing, fades it out first.
-
-        Returns the song metadata dict (or None if nothing found / no file).
         """
-        song = self._query_with_fallback(emotion)
         if not song:
-            print(f"[MusicEngine] No song found for emotion='{emotion}'")
             return None
 
         with self._lock:
@@ -176,7 +172,13 @@ class MusicEngine:
         title     = song.get("title",     "Unknown")
         artist    = song.get("artist",    "Unknown")
 
-        print(f"[MusicEngine] ♪  Now playing: {title} — {artist}")
+        if file_path:
+            p = Path(file_path)
+            if not p.is_absolute():
+                p = PROJECT_ROOT / p
+            file_path = str(p)
+
+        print(f"[MusicEngine] ♪  Now playing selected song: {title} — {artist}")
         print(f"              File: {file_path}")
 
         if not self._mixer_ready:
@@ -201,9 +203,33 @@ class MusicEngine:
 
         return song
 
+    def play_for_emotion(self, emotion: str) -> Optional[dict]:
+        """
+        Selects and plays the best matching song for the given emotion.
+        If a song is already playing, fades it out first.
+
+        Returns the song metadata dict (or None if nothing found / no file).
+        """
+        song = self._query_with_fallback(emotion)
+        if not song:
+            print(f"[MusicEngine] No song found for emotion='{emotion}'")
+            return None
+
+        return self.play_song(song)
+
+    def pause(self):
+        """Pause the current playback."""
+        if self._mixer_ready:
+            pygame.mixer.music.pause()
+
+    def resume(self):
+        """Resume the current playback."""
+        if self._mixer_ready:
+            pygame.mixer.music.unpause()
+
     def stop(self):
         """Fade out and stop current playback."""
-        if self._mixer_ready and pygame.mixer.music.get_busy():
+        if self._mixer_ready and (pygame.mixer.music.get_busy() or self._current_song is not None):
             pygame.mixer.music.fadeout(FADE_MS)
 
     def get_current_song(self) -> Optional[dict]:
