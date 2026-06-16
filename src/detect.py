@@ -98,9 +98,10 @@ class EmotionDetector:
     # ── Face detection ─────────────────────────────────────────────────────────
     def _init_face_detector(self):
         try:
-            from mtcnn import MTCNN
-            self._mtcnn = MTCNN()
-            print("[Detect] Face detector: MTCNN ✓")
+            from facenet_pytorch import MTCNN as FacenetMTCNN
+            import torch
+            self._mtcnn = FacenetMTCNN(keep_all=True, device='cpu')
+            print("[Detect] Face detector: MTCNN (facenet-pytorch) ✓")
         except Exception as e:
             print(f"[Detect] MTCNN unavailable ({e}), falling back to Haar cascade.")
             self._haar = cv2.CascadeClassifier(HAAR_XML)
@@ -109,14 +110,20 @@ class EmotionDetector:
             print("[Detect] Face detector: Haar cascade ✓")
 
     def _detect_faces_mtcnn(self, frame_rgb):
-        results = self._mtcnn.detect_faces(frame_rgb)
-        boxes = []
-        for r in results:
-            if r['confidence'] < 0.85:
+        from PIL import Image
+        img = Image.fromarray(frame_rgb)
+        boxes, probs = self._mtcnn.detect(img)
+        result = []
+        if boxes is None:
+            return result
+        for box, prob in zip(boxes, probs):
+            if prob is None or prob < 0.85:
                 continue
-            x, y, w, h = r['box']
-            boxes.append((max(0, x), max(0, y), w, h))
-        return boxes
+            x1, y1, x2, y2 = box
+            x, y = int(max(0, x1)), int(max(0, y1))
+            w, h = int(x2 - x1), int(y2 - y1)
+            result.append((x, y, w, h))
+        return result
 
     def _detect_faces_haar(self, frame_gray):
         faces = self._haar.detectMultiScale(
